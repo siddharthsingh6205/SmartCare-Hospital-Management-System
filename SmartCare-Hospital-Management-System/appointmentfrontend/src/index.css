@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+
+.bg-primary{
+    background-color: #5f6fff;
+}
+
+* {
+    font-family: Outfit;
+}
+.bg-primary-transparent {
+  background-color: rgba(95, 111, 255, 0.3); /* 30% opacity of #5f6fff */
+  backdrop-filter: blur(10px);
+}
+
+
+@media (max-width:740px) {
+    .active  p{
+       @apply text-white bg-[#5f6fff]
+    }
+}
+
+.active hr {
+    @apply block
+}
+
+
+
+::-webkit-scrollbar {
+    @apply hidden
+}
+
+
